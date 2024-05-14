@@ -5,12 +5,11 @@ import styles from "../styles";
 const Skills = () => {
   return (
     <section id="skills" className={`${styles.marginY}`}>
-      <h2 className={`${styles.heading2} text-slate-600`}>My Programming Skills</h2>
-      <div className="flex">
+      <h2 className={`${styles.heading2}`}>My Programming Skills</h2>
+      <div className="flex w-full relative overflow-hidden">
         {skills.map((skill) => (
-          <div key={skill.id} className={`border-2 border-slate-300 ${styles.flexCenter} flex-col rounded-full p-8 flex-wrap mx-4`}>
-            <img src={skill.icon} alt={skill.title} className="w-[50px]"/>
-            <h1>{skill.title}</h1>
+          <div key={skill.id} className="logosSlide flex">
+            <img src={skill.icon} alt={skill.title} className=" h-[80px] m-8 grayscale hover:grayscale-0"/>
           </div>
         ))}
       </div>
