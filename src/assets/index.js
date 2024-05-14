@@ -10,6 +10,10 @@ import nodejs from './nodejs_logo.jpg';
 import figma from './figma_logo.webp';
 import git from './git_hub.png';
 import tailwind from './tailwind_logo.png';
+import github from './github.svg';
+import call from './call.svg';
+import email from './email.svg';
+import linkedin from './linkedin.svg';
 
 
 export {
@@ -24,5 +28,9 @@ export {
     nodejs,
     figma,
     git,
-    tailwind
+    tailwind,
+    github,
+    call,
+    email,
+    linkedin
 }

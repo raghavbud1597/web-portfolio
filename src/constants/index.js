@@ -9,6 +9,10 @@ import {
   figma,
   git,
   tailwind,
+  github,
+  call,
+  email,
+  linkedin
 } from "../assets";
 
 export const navLinks = [
@@ -55,24 +59,24 @@ export const tags = [
 
 export const socialMedia = [
   {
-    id: "linkedin",
-    title: "LinkedIn",
-    url: "https://www.linkedin.com/in/raghav-budhiraja/",
-  },
-  {
     id: "email",
-    title: "Email",
+    icon: email,
     url: "mailto:raghavbudhiraja78@gmail.com",
   },
   {
     id: "phone",
-    title: "Contact Number",
+    icon: call,
     url: "tel:+1647-928-8504",
   },
   {
     id: "github",
-    title: "Github",
+    icon: github,
     url: "https://github.com/raghavbud1597",
+  },
+  {
+    id: "linkedin",
+    icon: linkedin,
+    url: "https://www.linkedin.com/in/raghav-budhiraja/",
   },
 ];
 
@@ -164,3 +168,4 @@ export const experience = [
     Year: "2023 - 2023",
   },
 ];
+
