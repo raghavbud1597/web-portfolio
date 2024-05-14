@@ -13,6 +13,7 @@ export default {
       animation: {
         'ball': 'animateBall 4s ease-in-out infinite',
         'bowl': 'animateBowl 4s ease-in-out infinite',
+        'spin-slow': 'spin 4s linear infinite',
       },
       keyframes: {
         animateBall: {

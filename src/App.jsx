@@ -12,12 +12,12 @@ import styles, { layout } from "./styles";
 
 function App() {
   return (
-    <div className="bg-slate-50 w-full my-2">
+    <div className={`bg-slate-50 w-full my-4`}>
       <div className={` ${layout.pageWrapper}`}>
         <div className={`${layout.sectionWrapper}`}>
           <Navbar />
         </div>
-        <div className={`${layout.sectionWrapper} my-0 md:my-10`}>
+        <div className={`${layout.sectionWrapper} my-0 md:my-20 lg:my-30`}>
           <Hero />
         </div>
         <div className={`${layout.sectionWrapper}`}>
