@@ -143,8 +143,9 @@ export const skills = [
   { 
     id: "tailwind",
     title: "Tailwind CSS",
-    icon: "tailwind",
-  }
+    icon: tailwind,
+  },
+  
 ];
 
 export const experience = [

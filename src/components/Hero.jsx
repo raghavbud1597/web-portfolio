@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section className={`${layout.sectionReverse}`}>
       <div
-        className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 text-slate-500`}
+        className={`flex-1 ${styles.flexStart} flex-col text-slate-500`}
       >
         <p>Hello there, my name is</p>
         <h1 className="font-montserrat font-bold lg:text-[5rem] text-[3.5rem] lg:leading-[5rem] leading-[3.5rem] text-left tracking-tight text-slate-600">
@@ -21,7 +21,7 @@ const Hero = () => {
             Web Developer & Designer
         </h1>
       </div>
-      <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10`}>
+      <div className={`flex-1 ${styles.flexCenter} md:my-0 my-10`}>
         <ProfilePicture />
       </div>
       

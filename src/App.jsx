@@ -8,39 +8,31 @@ import {
   Experience,
   Skills,
 } from "./components";
-import styles from "./styles";
+import styles, { layout } from "./styles";
 
 function App() {
   return (
-    <div className="bg-slate-50 w-full overflow-hidden">
-      <div className={`bg-slate-50 ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth} ${styles.paddingX} xl:px-0`}>
+    <div className="bg-slate-50 w-full my-2">
+      <div className={` ${layout.pageWrapper}`}>
+        <div className={`${layout.sectionWrapper}`}>
           <Navbar />
         </div>
-      </div>
-
-      <div className={`bg-slate-50 ${styles.flexStart} my-0 md:my-10`}>
-        <div className={`${styles.boxWidth}`}>
+        <div className={`${layout.sectionWrapper} my-0 md:my-10`}>
           <Hero />
         </div>
-      </div>
-
-      <div className={`bg-slate-50 ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
+        <div className={`${layout.sectionWrapper}`}>
           <Stats />
+        </div>
+        <div className={`${layout.sectionWrapper}`}>
           <Skills />
         </div>
-      </div>
-      <div className="w-full">
-        
-        <Experience />
-      </div>
-    
-      <div className={`bg-slate-50 ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
-          
-          
+        <div className={`${layout.sectionWrapper}`}>
+          <Experience />
+        </div>
+        <div className={`${layout.sectionWrapper}`}>
           <CTA />
+        </div>
+        <div className={`${layout.sectionWrapper}`}>
           <Footer />
         </div>
       </div>
