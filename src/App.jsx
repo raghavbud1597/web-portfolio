@@ -29,7 +29,17 @@ function App() {
         <div className={`${styles.boxWidth}`}>
           <Stats />
           <Skills />
-          <Experience />
+        </div>
+      </div>
+      <div className="w-full">
+        
+        <Experience />
+      </div>
+    
+      <div className={`bg-slate-50 ${styles.flexStart}`}>
+        <div className={`${styles.boxWidth}`}>
+          
+          
           <CTA />
           <Footer />
         </div>
