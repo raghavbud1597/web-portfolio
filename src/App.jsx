@@ -29,7 +29,7 @@ function App() {
         <div className={`${layout.sectionWrapper}`}>
           <Experience />
         </div>
-        <div className={`${layout.sectionWrapper}`}>
+        <div className={`${layout.sectionWrapper} my-2 md:my-10`}>
           <CTA />
         </div>
         <div className={`${layout.sectionWrapper}`}>

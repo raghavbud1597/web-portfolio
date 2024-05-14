@@ -9,7 +9,23 @@ export default {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
-      }
+      },
+      animation: {
+        'ball': 'animateBall 4s ease-in-out infinite',
+        'bowl': 'animateBowl 4s ease-in-out infinite',
+      },
+      keyframes: {
+        animateBall: {
+          '0%': { transform: 'translateY(-100%) translatex(-30px)'},
+          '50%': { transform: 'translateY(-100%) translatex(220px)' },
+          '100%': { transform: 'translateY(-100%) translatex(-30px)' },
+        },
+        animateBowl: {
+          '0%': { transform: 'rotate(50deg)' },
+          '50%': { transform: 'rotate(-50deg)' }, 
+          '100%': { transform: 'rotate(50deg)' },
+        },
+      },
     },
   },
   plugins: [
