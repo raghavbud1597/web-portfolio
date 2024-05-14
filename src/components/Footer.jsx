@@ -1,5 +1,5 @@
 import React from 'react'
-import { layout } from '../styles'
+import styles, { layout } from '../styles'
 import { socialMedia } from '../constants'
 
 const Footer = () => {
@@ -11,7 +11,7 @@ const Footer = () => {
         &copy; {year} Raghav Budhiraja
       </p>
       
-      <div className='flex'>
+      <div className={`${styles.flexCenter}`}>
         {socialMedia.map((item) => (
           <a
             key={item.id}

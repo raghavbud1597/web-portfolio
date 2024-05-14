@@ -155,17 +155,52 @@ export const skills = [
 export const experience = [
   {
     id: "1",
-    title: "Project Management",
-    company: "Georgian ILAC College",
+    title: "Consultant and Freelancer Web Developer",
+    company: "Self Employed",
     description: "",
-    Year: "2023 - 2024",
+    year: "2023 - Present",
   },
   {
     id: "2",
-    title: "Cloud Computing Technologies",
+    title: "Project Management PostGraduate Certificate",
+    company: "Georgian ILAC College",
+    description: "",
+    year: "2023 - 2024",
+  },
+  {
+    id: "3",
+    title: "Cloud Computing Technologies PostGraduate Certificate",
     company: "George Brown College",
-    description: "2023 - 2023",
-    Year: "2023 - 2023",
+    description: "",
+    year: "2023 - 2023",
+  },
+  {
+    id: "4",
+    title: "Senior Frontend Developer",
+    company: "Apexon",
+    description: "",
+    year: "2022 - 2022",
+  },
+  {
+    id: "5",
+    title: "Frontend Developer",
+    company: "Deloitte",
+    description: "",
+    year: "2021 - 2022",
+  },
+  {
+    id: "6",
+    title: "Full Stack Developer",
+    company: "Freshworks",
+    description: "",
+    year: "2018 - 2021",
+  },
+  {
+    id: "7",
+    title: "Bachelor of Technology in Computer Science and Engineering",
+    company: "SRM University",
+    description: "",
+    year: "2014 - 2018",
   },
 ];
 
