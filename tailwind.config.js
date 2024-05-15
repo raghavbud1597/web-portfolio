@@ -10,6 +10,11 @@ export default {
         poppins: ["Poppins", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
       },
+      boxShadow: {
+        'neu-outer': 'inset 5px 5px 5px rgba(0,0,0,0.05), inset -5px -5px 5px rgba(255,255,255,0.5), 5px 5px 5px rgba(0,0,0,0.05), -5px -5px 5px rgba(255,255,255,0.5) ',
+        'neu-inner': '0 10px 20px rgba(0,0,0,0.1)',
+        'neu-hover': '0 10px 40px rgba(0,0,0,0.4)',
+      },
       animation: {
         'ball': 'animateBall 4s ease-in-out infinite',
         'bowl': 'animateBowl 4s ease-in-out infinite',

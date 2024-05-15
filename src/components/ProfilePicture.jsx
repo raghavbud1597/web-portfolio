@@ -64,7 +64,6 @@ const ProfilePicture = () => {
                 Download CV
             </button>
         </div>
-        
       </div>
     </section>
   );

@@ -1,6 +1,6 @@
 const styles = {
   
-    heading2: "font-poppins text-slate-600 font-semibold xs:text-[48px] text-[40px] xs:leading-[76px] leading-[66px] w-full",
+    heading2: "font-poppins text-slate-600 font-semibold xs:text-[48px] text-[40px] xs:leading-[76px] leading-[66px] w-full my-10",
     paragraph: "font-poppins font-normal text-dimWhite text-[18px] leading-[30.8px]",
   
     flexCenter: "flex justify-center items-center",

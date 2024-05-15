@@ -8,6 +8,7 @@ import {
   Experience,
   Skills,
 } from "./components";
+import WhyMe from "./components/WhyMe";
 import styles, { layout } from "./styles";
 
 function App() {
@@ -28,6 +29,9 @@ function App() {
         </div>
         <div className={`${layout.sectionWrapper}`}>
           <Experience />
+        </div>
+        <div className={`${layout.sectionWrapper} my-0 md:my-20`}>
+          <WhyMe />
         </div>
         <div className={`${layout.sectionWrapper} my-2 md:my-10`}>
           <CTA />

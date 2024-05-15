@@ -204,3 +204,35 @@ export const experience = [
   },
 ];
 
+export const whyMe = [
+  {
+    "id": "01",
+    "heading": "Seamless Integration",
+    "description": "I engineer solutions that integrate smoothly into your workflows, ensuring compatibility and scalability for rapid progress."
+  },
+  {
+    "id": "02",
+    "heading": "Strategic Vision",
+    "description": "I bring a strategic mindset to projects, aligning development efforts with your objectives to deliver impactful results."
+  },
+  {
+    "id": "03",
+    "heading": "Proven Track Record",
+    "description": "My successful projects demonstrate my ability to exceed expectations and add value to your team."
+  },
+  {
+    "id": "04",
+    "heading": "ROI-Focused Approach",
+    "description": "I prioritize delivering tangible returns on your investment by focusing on outcomes that directly impact your bottom line."
+  },
+  {
+    "id": "05",
+    "heading": "Customized Solutions",
+    "description": "I tailor solutions to fit your specific needs, ensuring seamless integration with your processes and addressing your challenges."
+  },
+  {
+    "id": "06",
+    "heading": "Collaborative Partnership",
+    "description": "I'm committed to forming a collaborative partnership aimed at achieving shared goals, offering expertise to elevate your frontend development efforts."
+  }
+]

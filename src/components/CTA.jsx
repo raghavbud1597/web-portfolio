@@ -4,7 +4,7 @@ import styles, { layout } from "../styles";
 const CTA = () => {
   return (
     <section
-      className={`w-full border-2 rounded-3xl border-slate-100 bg-slate-700 ${layout.sectionReverse} ${styles.paddingX}`}
+      className={`w-full border-2 rounded-[3rem] border-slate-100 bg-slate-700 ${layout.sectionReverse} px-20`}
     >
       <div className={`${styles.flexCenter} min-h-[200px]`}>
         <div className="relative">
