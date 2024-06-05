@@ -1,7 +1,4 @@
-import React from "react";
 import ProfilePicture from "./ProfilePicture";
-import Tags from "./Tags";
-import { tags } from "../constants";
 import styles, { layout } from "../styles";
 
 const Hero = () => {

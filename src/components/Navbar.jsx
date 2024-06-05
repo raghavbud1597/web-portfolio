@@ -1,8 +1,9 @@
-import { useState } from "react";
+
 import { navLinks } from "../constants";
 import { code } from "../assets";
+import Button from "./Button";
 const Navbar = () => {
-  const [toggle, setToggle] = useState(false);
+
   return (
     <nav className="flex items-center justify-between w-full">
       <a href="#">
@@ -16,9 +17,7 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-      <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full">
-        Hire Me
-      </button>
+      <Button text="Hire Me" link="mailto:raghavbudhiraja78@gmail.com" />
     </nav>
   );
 };

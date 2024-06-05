@@ -1,12 +1,13 @@
 import React from "react";
 import styles, { layout } from "../styles";
+import Button  from "./Button";
 
 const CTA = () => {
   return (
     <section
-      className={`w-full border-2 rounded-[3rem] border-slate-100 bg-slate-700 ${layout.sectionReverse} px-20`}
+      className={`w-full border-2 rounded-[3rem] border-slate-100 bg-slate-700 ${layout.sectionReverse} md:px-10 lg:px-40 justify-center`}
     >
-      <div className={`${styles.flexCenter} min-h-[200px]`}>
+      <div className={`${styles.flexCenter} min-h-[200px] px-20`}>
         <div className="relative">
           <div className="
           relative 
@@ -40,14 +41,12 @@ const CTA = () => {
         </div>
       </div>
       
-      <div>
-        <h2 className={`font-poppins font-semibold xs:text-[48px] text-[40px] xs:leading-[76px] leading-[66px] text-white`}>Let's work together</h2>
-        <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full">
-          Contact Me
-        </button>
-        <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full">
-          Download CV
-        </button>
+      <div className={`flex justify-center items-center md:items-start  px-10 md:px20 py-10 md:py-0 flex-col`}>
+        <h2 className={`font-poppins font-semibold md:text-[48px] text-[40px] md:leading-[52px] leading-[44px] text-white text-left`}>Let's work together</h2>
+        <div className="flex gap-2 flex-col lg:flex-row my-4">
+          <Button text="Contact Me" link="mailto:raghavbudhiraja78@gmail.com" />
+          <Button text="Download CV" link="https://drive.google.com/file/d/1mAyc7CaOj8kSDrpDFpXbsq-lBHPX89gj/view?usp=drive_link" />
+        </div>
       </div>
     </section>
   );

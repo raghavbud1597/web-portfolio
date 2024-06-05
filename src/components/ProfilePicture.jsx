@@ -1,5 +1,6 @@
 import styles from "../styles";
 import { profilePicture } from "../assets";
+import Button from "./Button";
 
 const ProfilePicture = () => {
   const profilePictureStyle = {
@@ -60,9 +61,7 @@ const ProfilePicture = () => {
         />
         <div className="flex flex-col">
             <h2>Let&apos;s Connect</h2>
-            <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full">
-                Download CV
-            </button>
+            <Button text="Download CV" link="https://drive.google.com/file/d/1mAyc7CaOj8kSDrpDFpXbsq-lBHPX89gj/view?usp=sharing" />
         </div>
       </div>
     </section>

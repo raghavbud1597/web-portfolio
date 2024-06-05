@@ -14,6 +14,7 @@ export default {
         'neu-outer': 'inset 5px 5px 5px rgba(0,0,0,0.05), inset -5px -5px 5px rgba(255,255,255,0.5), 5px 5px 5px rgba(0,0,0,0.05), -5px -5px 5px rgba(255,255,255,0.5) ',
         'neu-inner': '0 10px 20px rgba(0,0,0,0.1)',
         'neu-hover': '0 10px 40px rgba(0,0,0,0.4)',
+        'neu-inner-dark': '0 10px 20px rgba(255,255,255,0.1)',
       },
       animation: {
         'ball': 'animateBall 4s ease-in-out infinite',
