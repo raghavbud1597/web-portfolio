@@ -1,10 +1,10 @@
-import React from 'react'
-import styles, { layout } from '../styles'
-import { whyMe } from '../constants'
+import styles from "../styles";
+import { whyMe } from "../constants";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const WhyMe = () => {
   const cardStyle = {
-    heading:`
+    heading: `
         font-poppins 
         text-slate-600 
         font-semibold 
@@ -71,26 +71,38 @@ const WhyMe = () => {
         transition-all
         group-hover:text-slate-300
 
-    `
-  }
+    `,
+  };
   return (
-    <section id='why-me' className={`flex flex-col lg:flex-row lg:items-start `}>
+    <section
+      id="why-me"
+      className={`flex flex-col lg:flex-row lg:items-start `}
+    >
+      <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutUp">
         <h2 className={`${cardStyle.heading}`}>Why Hire Me</h2>
-        <div className={`${cardStyle.cardContainer}`}>
-            {whyMe.map((item) => (
-                <div key={item.id} className={`${cardStyle.cardBox}`}>
-                    <div className={`${cardStyle.card}`}>
-                        <div className={`${cardStyle.content}`}>
-                            <h2 className={`${cardStyle.cardNumber}`}>{item.id}</h2>
-                            <h3 className={`${cardStyle.cardTitle}`}>{item.heading}</h3>
-                            <p className={`${cardStyle.cardText}`}>{item.description}</p>
-                        </div>
-                    </div>
-                </div>
-            ))}
-        </div>
-    </section>
-  )
-}
+      </ScrollAnimation>
 
-export default WhyMe
+      <div className={`${cardStyle.cardContainer}`}>
+        {whyMe.map((item) => (
+          <ScrollAnimation
+            key={item.id}
+            animateIn="fadeInUp"
+            animateOut="fadeOutUp"
+          >
+            <div key={item.id} className={`${cardStyle.cardBox}`}>
+              <div className={`${cardStyle.card}`}>
+                <div className={`${cardStyle.content}`}>
+                  <h2 className={`${cardStyle.cardNumber}`}>{item.id}</h2>
+                  <h3 className={`${cardStyle.cardTitle}`}>{item.heading}</h3>
+                  <p className={`${cardStyle.cardText}`}>{item.description}</p>
+                </div>
+              </div>
+            </div>
+          </ScrollAnimation>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default WhyMe;
