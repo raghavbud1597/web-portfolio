@@ -14,7 +14,7 @@ const Stats = () => (
       >
         <div
           key={stat.id}
-          className={`flex-1 flex justify-between items-center flex-row m-3 max-w-[300px]`}
+          className={`flex-1 flex justify-between items-center flex-row m-3 max-w-[310px]`}
         >
           <h4 className="font-poppins font-semibold text-slate-600 sm:text-[40px] text-[30px] sm:leading-[53px] leading-[43px]">
             {stat.value}

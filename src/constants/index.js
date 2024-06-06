@@ -116,7 +116,7 @@ export const stats = [
   },
   {
     id: "coffee",
-    title: "Cups of Coffee Drunk",
+    title: "Cups of Coffee Driving Results",
     value: '2000+',
   },
   {
