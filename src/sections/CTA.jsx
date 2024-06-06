@@ -1,4 +1,3 @@
-import React from "react";
 import styles, { layout } from "../styles";
 import Button  from "./components/Button";
 import ScrollAnimation from "react-animate-on-scroll";
