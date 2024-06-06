@@ -1,4 +1,5 @@
 import Tilt from "react-parallax-tilt";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const SkillTag = ({ id= 0, title='', description='' }) => {
   const tagStyle = {
@@ -34,10 +35,13 @@ const SkillTag = ({ id= 0, title='', description='' }) => {
 
   return (
     <Tilt>
+      <ScrollAnimation animateIn='fadeInUp' animateOut='fadeOutUp'>
       <div key={id} className={tagStyle.sectionWrapper}>
         <h1 className={tagStyle.heading}>{title}</h1>
         <p className={tagStyle.description}>{description}</p>
       </div>
+      </ScrollAnimation>
+      
     </Tilt>
   );
 };
