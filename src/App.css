@@ -14,17 +14,3 @@
   background-clip: text;
   text-fill-color: transparent;
 }
-
-.logosSlide {
-  animation: animate 8s linear infinite;
-}
-
-@keyframes animate {
-  0% {
-    transform: translateX(100%);
-  }
-
-  100% {
-    transform: translateX(-100%);
-  }
-}

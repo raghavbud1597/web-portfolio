@@ -31,7 +31,7 @@ function App() {
         <div className={`${layout.sectionWrapper}`}>
           <Skills />
         </div>
-        <div className={`${layout.sectionWrapper} my-0 md:my-20`}>
+        <div className={`${layout.sectionWrapper} my-0 md:mb-20`}>
           <Experience />
         </div>
         <div className={`${layout.sectionWrapper} my-0 md:my-20`}>

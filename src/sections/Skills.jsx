@@ -9,10 +9,10 @@ const Skills = () => {
         <h2 className={`${styles.heading2}`}>My Programming Skills</h2>
       </ScrollAnimation>
 
-      <div className="flex w-full relative overflow-hidden">
+      <div className="flex w-full">
         {skills.map((skill) => (
           <ScrollAnimation animateIn="slideInRight" animateOut="slideOutLeft" key={skill.id}>
-            <div key={skill.id} className="logosSlide flex">
+            <div key={skill.id} className="flex">
               <img
                 src={skill.icon}
                 alt={skill.title}
