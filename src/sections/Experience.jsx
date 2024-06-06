@@ -7,8 +7,8 @@ const Experience = () => {
   
   
   return (
-    <section >
-      <h2 className={`${styles.heading2}`}>Education & Experience</h2>
+    <section id='experience'>
+      <h2 className={`${styles.heading2}`} >Education & Experience</h2>
       <div className='w-full'>
         {experience.map((item) => (
           <div key={item.id} className='flex items-center justify-start  p-4 border-b-2 border-slate-300'>

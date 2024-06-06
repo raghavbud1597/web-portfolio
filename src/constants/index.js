@@ -9,10 +9,6 @@ import {
   figma,
   git,
   tailwind,
-  github,
-  call,
-  email,
-  linkedin,
   code,
 } from "../assets";
 
@@ -20,20 +16,20 @@ export const navBar = {
   logo: code,
   navLinks:  [
     {
-      id: "home",
+      id: "#",
       title: "Home",
     },
     {
-      id: "services",
-      title: "Services",
-    },
-    {
-      id: "skills",
+      id: "#skills",
       title: "Skills",
     },
     {
-      id: "experience",
+      id: "#experience",
       title: "Experience",
+    },
+    {
+      id: "#why-me",
+      title: "Why Me",
     },
   ]
 }

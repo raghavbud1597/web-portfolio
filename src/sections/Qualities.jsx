@@ -5,7 +5,7 @@ import styles from '../styles'
 const Qualities = () => {
   
   return (
-    <div>
+    <div id='skills'>
       <h1 className={`${styles.heading2}`}>{quality.heading}</h1>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-10 m-6'>
         {quality.skills.map((item) => (

@@ -74,7 +74,7 @@ const WhyMe = () => {
     `
   }
   return (
-    <section className={`flex flex-col lg:flex-row lg:items-start `}>
+    <section id='why-me' className={`flex flex-col lg:flex-row lg:items-start `}>
         <h2 className={`${cardStyle.heading}`}>Why Hire Me</h2>
         <div className={`${cardStyle.cardContainer}`}>
             {whyMe.map((item) => (
