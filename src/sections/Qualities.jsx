@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react'
 import { quality } from '../constants'
 import SkillTag from './components/SkillTag'
 import styles from '../styles'
