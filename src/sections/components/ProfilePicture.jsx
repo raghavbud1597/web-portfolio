@@ -46,7 +46,7 @@ const ProfilePicture = () => {
         h-full 
         bg-cover 
         transition-all 
-        hover:opacity-0`
+        `
 
     
 };
