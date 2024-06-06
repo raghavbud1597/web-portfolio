@@ -92,22 +92,22 @@ export const quality = {
 export const socialMedia = [
   {
     id: "email",
-    icon: email,
+    title: "Email",
     url: "mailto:raghavbudhiraja78@gmail.com",
   },
   {
     id: "phone",
-    icon: call,
+    title: "Call",
     url: "tel:+1647-928-8504",
   },
   {
     id: "github",
-    icon: github,
+    title: "Github",
     url: "https://github.com/raghavbud1597",
   },
   {
     id: "linkedin",
-    icon: linkedin,
+    title: "LinkedIn",
     url: "https://www.linkedin.com/in/raghav-budhiraja/",
   },
 ];
