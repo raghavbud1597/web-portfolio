@@ -40,7 +40,7 @@ const WhyMe = () => {
         transition-all
         hover:-translate-y-8
         hover:shadow-neu-hover
-        hover:bg-gradient-to-br hover:from-[#b95ce4] hover:to-[#4f29cd]
+        hover:bg-gradient-to-br hover:from-[#d39ced] hover:to-[#6a53d7]
         group
     `,
     content: `p-5 text-center`,
@@ -53,7 +53,8 @@ const WhyMe = () => {
         transition-all 
         font-bold
         z-10
-        group-hover:text-white   
+        group-hover:text-slate-400  
+        group-hover:opacity-50 
     `,
     cardTitle: `
         text-2xl
