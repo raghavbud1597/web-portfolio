@@ -35,7 +35,7 @@ const SkillTag = ({ id= 0, title='', description='' }) => {
 
   return (
     <Tilt>
-      <ScrollAnimation animateIn='fadeInUp' animateOut='fadeOutUp'>
+      <ScrollAnimation animateIn='fadeInUp' animateOut='fadeOutUp'  style={{ height:"100%" }}>
       <div key={id} className={tagStyle.sectionWrapper}>
         <h1 className={tagStyle.heading}>{title}</h1>
         <p className={tagStyle.description}>{description}</p>
