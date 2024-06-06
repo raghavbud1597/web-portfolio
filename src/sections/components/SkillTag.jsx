@@ -1,7 +1,6 @@
-import React from "react";
 import Tilt from "react-parallax-tilt";
 
-const SkillTag = ({ id, title, description }) => {
+const SkillTag = ({ id= 0, title='', description='' }) => {
   const tagStyle = {
     sectionWrapper: `
       p-8
@@ -13,12 +12,20 @@ const SkillTag = ({ id, title, description }) => {
       w-full
       hover:shadow-neu-inner
       select-none
+      group
     `,
     heading: `
       text-2xl
       font-bold
       text-slate-500
       py-2
+      inline-block
+      bg-clip-text
+      group-hover:text-transparent
+      group-hover:bg-gradient-to-r 
+      group-hover:from-[#962ec1] 
+      group-hover:via-[#e9877a] 
+      group-hover:to-[#e9877a]
     `,
     description: `
       text-slate-400
