@@ -1,17 +1,16 @@
 
-import { navLinks } from "../constants";
-import { code } from "../assets";
-import Button from "./Button";
+import { navBar } from "../constants";
+import Button from "./components/Button";
 const Navbar = () => {
 
   return (
     <nav className="flex items-center justify-between w-full">
       <a href="#">
-        <img className="w-[30px] h-[30px]" src={code} />
+        <img className="w-[30px] h-[30px]" src={navBar.logo} />
       </a>
 
       <ul className="lg:flex hidden items-center space-x-5">
-        {navLinks.map((link) => (
+        {navBar.navLinks.map((link) => (
           <li key={link} className="text-lg font-medium text-slate-400 px-5">
             <a href={link.id}>{link.title}</a>
           </li>

@@ -5,6 +5,8 @@ import Footer from "./Footer";
 import Experience from "./Experience";
 import Hero from "./Hero";
 import Skills from "./Skills";
+import Qualities from "./Qualities";
+import WhyMe from "./WhyMe";
 
 export {
   Navbar,
@@ -14,4 +16,6 @@ export {
   Hero,
   Experience,
   Skills,
+  Qualities,
+  WhyMe,
 };

@@ -12,50 +12,82 @@ import {
   github,
   call,
   email,
-  linkedin
+  linkedin,
+  code,
 } from "../assets";
 
-export const navLinks = [
-  {
-    id: "home",
-    title: "Home",
-  },
-  {
-    id: "services",
-    title: "Services",
-  },
-  {
-    id: "skills",
-    title: "Skills",
-  },
-  {
-    id: "experience",
-    title: "Experience",
-  },
-];
+export const navBar = {
+  logo: code,
+  navLinks:  [
+    {
+      id: "home",
+      title: "Home",
+    },
+    {
+      id: "services",
+      title: "Services",
+    },
+    {
+      id: "skills",
+      title: "Skills",
+    },
+    {
+      id: "experience",
+      title: "Experience",
+    },
+  ]
+}
 
-export const tags = [
-  {
-    id: "1",
-    title: "Web Developer",
-    bgColor: "blue-500",
-  },
-  {
-    id: "2",
-    title: "React JS",
-    bgColor: "green-500",
-  },
-  {
-    id: "3",
-    title: "Node JS",
-    bgColor: "red-500",
-  },
-  {
-    id: "4",
-    title: "Azure",
-    bgColor: "orange-500",
-  },
-];
+export const quality = {
+  heading: "What I am Good at",
+  skills: [
+    {
+      "id": 1,
+      "title": "Creating Responsive Webpages",
+      "description": "Expert in crafting web designs that look great and perform well on all devices, ensuring a seamless user experience across various screen sizes."
+    },
+    {
+      "id": 2,
+      "title": "Designing Frontend Architecture",
+      "description": "Skilled in planning and structuring the frontend for robust, scalable, and maintainable web applications, adhering to best practices and modern methodologies."
+    },
+    {
+      "id": 3,
+      "title": "Coding Pixel Perfect Designs",
+      "description": "Proficient in translating high-fidelity designs into precise, visually accurate web pages that stay true to the designer’s vision."
+    },
+    {
+      "id": 4,
+      "title": "Coding Clean and Reusable Components",
+      "description": "Adept at developing modular, maintainable, and reusable UI components using modern JavaScript frameworks and libraries."
+    },
+    {
+      "id": 5,
+      "title": "Cross-Browser Compatibility",
+      "description": "Experienced in ensuring websites function consistently and correctly across different browsers, enhancing the reach and usability of web applications."
+    },
+    {
+      "id": 6,
+      "title": "Performance Optimization",
+      "description": "Focused on optimizing web performance for faster load times and smoother interactions, improving overall user satisfaction and engagement."
+    },
+    {
+      "id": 7,
+      "title": "User-Friendly Interfaces",
+      "description": "Committed to designing intuitive and accessible user interfaces that enhance user experience and ease of navigation."
+    },
+    {
+      "id": 8,
+      "title": "Interactive UI Elements",
+      "description": "Skilled in creating dynamic and engaging interactive elements using modern JavaScript frameworks and libraries to enhance user engagement."
+    },
+    {
+      "id": 9,
+      "title": "Collaborative Teamwork",
+      "description": "Strong team player with experience in collaborative development environments, utilizing version control and best practices to ensure seamless integration and project success."
+    }
+  ]  
+};
 
 export const socialMedia = [
   {
@@ -82,19 +114,19 @@ export const socialMedia = [
 
 export const stats = [
   {
-    id: "projects",
-    title: "Projects Done",
-    value: '50+',
+    id: "experience",
+    title: "Years of Developing Websites",
+    value: '7+',
   },
   {
-    id: "clients",
-    title: "Clients Served",
-    value: '20+',
+    id: "coffee",
+    title: "Cups of Coffee Drunk",
+    value: '2000+',
   },
   {
-    id: "years",
-    title: "Years of Experience",
-    value: '6+',
+    id: "commits",
+    title: "Code Commits Made",
+    value: '4200+',
   },
 ];
 

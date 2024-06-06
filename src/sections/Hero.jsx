@@ -1,4 +1,4 @@
-import ProfilePicture from "./ProfilePicture";
+import ProfilePicture from "./components/ProfilePicture";
 import styles, { layout } from "../styles";
 
 const Hero = () => {
@@ -7,7 +7,7 @@ const Hero = () => {
       <div
         className={`flex-1 ${styles.flexStart} flex-col text-slate-500`}
       >
-        <p>Hello there, my name is</p>
+        <p className="text-[1.5rem]">Hello there, my name is</p>
         <h1 className="font-montserrat font-bold lg:text-[5rem] text-[3.5rem] lg:leading-[5rem] leading-[3.5rem] text-left tracking-tight text-slate-600">
           Raghav
         </h1>
@@ -17,6 +17,9 @@ const Hero = () => {
         <h1 className="font-montserrat font-bold md:text-[2.5rem] text-[2rem] md:leading-[2.6rem] leading-[2rem] text-left tracking-tight text-gradient">
             Web Developer & Designer
         </h1>
+        <p className="text-left my-3 max-w-[500px]">
+         I am a passionate frontend developer dedicated to transforming creative visions into pixel-perfect realities. With a knack for designing robust frontend architectures, I take pride in crafting seamless, responsive, and visually stunning user experiences. 
+        </p>
       </div>
       <div className={`flex-1 ${styles.flexCenter} md:my-0 my-10`}>
         <ProfilePicture />

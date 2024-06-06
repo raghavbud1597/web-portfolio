@@ -1,5 +1,5 @@
-import styles from "../styles";
-import { profilePicture } from "../assets";
+import styles from "../../styles";
+import { profilePicture } from "../../assets";
 import Button from "./Button";
 
 const ProfilePicture = () => {

@@ -7,9 +7,10 @@ import {
   Hero,
   Experience,
   Skills,
-} from "./components";
-import WhyMe from "./components/WhyMe";
-import styles, { layout } from "./styles";
+  Qualities,
+  WhyMe,
+} from "./sections";
+import { layout } from "./styles";
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
         </div>
         <div className={`${layout.sectionWrapper} `}>
           <Stats />
+        </div>
+        <div className={`${layout.sectionWrapper} `}>
+          <Qualities />
         </div>
         <div className={`${layout.sectionWrapper}`}>
           <Skills />
