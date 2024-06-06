@@ -4,7 +4,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 const CTA = () => {
   return (
-    <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutUp">
+    <ScrollAnimation animateIn="zoomIn" animateOut="zoomOut">
     <section
       className={`w-full border-2 rounded-[3rem] border-slate-100 bg-slate-700 ${layout.section} md:px-10 lg:px-30 justify-center`}
     >
