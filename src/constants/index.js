@@ -115,14 +115,14 @@ export const stats = [
     value: '7+',
   },
   {
-    id: "coffee",
-    title: "Cups of Coffee Driving Results",
-    value: '2000+',
-  },
-  {
     id: "commits",
     title: "Code Commits Made",
     value: '4200+',
+  },
+  {
+    id: "coffee",
+    title: "cups of coffee behind the scenes",
+    value: '2000+',
   },
 ];
 
