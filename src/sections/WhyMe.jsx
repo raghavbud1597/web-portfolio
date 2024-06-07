@@ -86,8 +86,8 @@ const WhyMe = () => {
         {whyMe.map((item) => (
           <ScrollAnimation
             key={item.id}
-            animateIn="zoomIn"
-            animateOut="zoomOut"
+            animateIn="flipInX"
+            animateOut="flipOutX"
           >
             <div key={item.id} className={`${cardStyle.cardBox}`}>
               <div className={`${cardStyle.card}`}>

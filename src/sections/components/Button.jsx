@@ -23,6 +23,7 @@ const Button = ({
         <a 
             href={link} 
             className={`${btnStyle.btn}`}
+            target="blank"
         >
             {text}
         </a>

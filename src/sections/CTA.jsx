@@ -46,7 +46,7 @@ const CTA = () => {
         <h2 className={`font-poppins font-semibold text-4xl text-white text-left`}>Let's connect to discuss your project today and discover how I breathe life into design through code!</h2>
         <div className="flex gap-2 flex-col lg:flex-row my-4">
           <Button text="Contact Me" link="mailto:raghavbudhiraja78@gmail.com" />
-          <Button text="Download CV" link="https://drive.google.com/file/d/1mAyc7CaOj8kSDrpDFpXbsq-lBHPX89gj/view?usp=drive_link" />
+          <Button text="Download CV" link="https://drive.google.com/file/d/17RHXjbgz1oZOiLEo8To4Jk8l_dqQUl_T/view" />
         </div>
       </div>
     </section>

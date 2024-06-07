@@ -41,7 +41,7 @@ const Hero = () => {
             />
             <Button
               text="Download CV"
-              link="https://drive.google.com/file/d/1mAyc7CaOj8kSDrpDFpXbsq-lBHPX89gj/view?usp=drive_link"
+              link="https://drive.google.com/file/d/17RHXjbgz1oZOiLEo8To4Jk8l_dqQUl_T/view"
             />
           </div>
         </ScrollAnimation>
