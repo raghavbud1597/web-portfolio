@@ -7,6 +7,7 @@ import Hero from "./Hero";
 import Skills from "./Skills";
 import Qualities from "./Qualities";
 import WhyMe from "./WhyMe";
+import Projects from "./Projects";
 
 export {
   Navbar,
@@ -18,4 +19,5 @@ export {
   Skills,
   Qualities,
   WhyMe,
+  Projects
 };

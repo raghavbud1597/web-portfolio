@@ -9,6 +9,7 @@ import {
   Skills,
   Qualities,
   WhyMe,
+  Projects,
 } from "./sections";
 import { layout } from "./styles";
 
@@ -33,6 +34,9 @@ function App() {
         </div>
         <div className={`${layout.sectionWrapper} my-0 md:mb-20`}>
           <Experience />
+        </div>
+        <div className={`${layout.sectionWrapper} my-0 md:mb-20`}>
+          <Projects />
         </div>
         <div className={`${layout.sectionWrapper} my-0 md:my-20`}>
           <WhyMe />

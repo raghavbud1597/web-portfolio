@@ -3,14 +3,11 @@ const Button = ({ text = "Hire Me", link = "#", type = "primary" }) => {
     btn: `
         relative
         inline-block
-        px-4
-        py-2
         border-2
         border-solid
         uppercase
         no-underline
         font-semibold
-        text-xl
         before:absolute
         before:content-[''] 
         before:top-[6px]
@@ -35,26 +32,41 @@ const Button = ({ text = "Hire Me", link = "#", type = "primary" }) => {
         after:hover:scale-x-0
     `,
     muted: `
+        px-4
+        py-2
         border-slate-300
         text-slate-400
         before:bg-slate-50
         after:bg-slate-50
     `,
     primary: `
-        border-slate-400
-        text-slate-500
+        px-4
+        py-2
+        border-slate-300
+        text-slate-400
         before:bg-slate-50
         after:bg-slate-50
     `,
     light: `
+        px-4
+        py-2
         border-slate-50
         text-slate-50
         before:bg-slate-700
         after:bg-slate-700
     `,
+    large: `
+        px-20
+        py-4
+        border-slate-400
+        text-slate-500
+        before:bg-slate-50
+        after:bg-slate-50
+    `,
     btnText: `
         relative
         z-10
+        text-xl
     `,
   };
   return (
