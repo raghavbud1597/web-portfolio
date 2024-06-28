@@ -16,7 +16,7 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-      <Button text="Hire Me" link="mailto:raghavbudhiraja78@gmail.com" />
+      <Button text="Hire Me" link="mailto:raghavbudhiraja78@gmail.com" type="muted"/>
     </nav>
   );
 };

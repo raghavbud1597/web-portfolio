@@ -59,10 +59,10 @@ const ProfilePicture = () => {
           alt="Profile Picture"
           className={`${profilePictureStyle.img}`}
         />
-        <div className="flex flex-col">
+        {/* <div className="flex flex-col">
             <h2>Let&apos;s Connect</h2>
             <Button text="Download CV" link="https://drive.google.com/file/d/1mAyc7CaOj8kSDrpDFpXbsq-lBHPX89gj/view?usp=sharing" />
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -1,33 +1,71 @@
-import styles from '../../styles'
+const Button = ({ text = "Hire Me", link = "#", type = "primary" }) => {
+  const btnStyle = {
+    btn: `
+        relative
+        inline-block
+        px-4
+        py-2
+        border-2
+        border-solid
+        uppercase
+        no-underline
+        font-semibold
+        text-xl
+        before:absolute
+        before:content-[''] 
+        before:top-[6px]
+        before:left-[-3px]
+        before:w-[calc(100%+6px)]
+        before:h-[calc(100%-12px)]
+        before:ease-in-out
+        before:duration-500 
+        before:scale-y-100
+        before:delay-500
+        before:hover:scale-y-0
+        after:absolute
+        after:content-[''] 
+        after:left-[6px]
+        after:top-[-3px]
+        after:h-[calc(100%+6px)]
+        after:w-[calc(100%-12px)]
+        after:ease-in-out
+        after:duration-500 
+        after:scale-x-100
+        after:delay-500
+        after:hover:scale-x-0
+    `,
+    muted: `
+        border-slate-300
+        text-slate-400
+        before:bg-slate-50
+        after:bg-slate-50
+    `,
+    primary: `
+        border-slate-400
+        text-slate-500
+        before:bg-slate-50
+        after:bg-slate-50
+    `,
+    light: `
+        border-slate-50
+        text-slate-50
+        before:bg-slate-700
+        after:bg-slate-700
+    `,
+    btnText: `
+        relative
+        z-10
+    `,
+  };
+  return (
+    <a
+      href={link}
+      className={`${btnStyle.btn} ${btnStyle[type]}`}
+      target="blank"
+    >
+      <span className={`${btnStyle.btnText}`}>{text}</span>
+    </a>
+  );
+};
 
-const Button = ({
-        text = 'Hire Me',
-        link = '#'
-    }) => {
-    const btnStyle = {
-        btn: `
-            inline-block
-            px-6
-            py-2
-            bg-sky-500
-            rounded-full
-            text-white
-            font-semibold
-            no-underline
-            shadow-md
-            hover:bg-red-500
-            hover:shadow-lg
-        `
-    }
-    return (
-        <a 
-            href={link} 
-            className={`${btnStyle.btn}`}
-            target="blank"
-        >
-            {text}
-        </a>
-    )
-}
-
-export default Button
+export default Button;
