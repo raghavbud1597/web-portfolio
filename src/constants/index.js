@@ -102,6 +102,11 @@ export const socialMedia = [
     url: "https://github.com/raghavbud1597",
   },
   {
+    id: "codepen",
+    title: "Codepen",
+    url: "https://codepen.io/raghavbudhiraja",
+  },
+  {
     id: "linkedin",
     title: "LinkedIn",
     url: "https://www.linkedin.com/in/raghav-budhiraja/",
