@@ -116,18 +116,18 @@ export const socialMedia = [
 export const stats = [
   {
     id: "experience",
-    title: "Years of Developing Websites",
+    title: "Years Solving Frontend Problems",
     value: '7+',
   },
   {
-    id: "commits",
-    title: "Code Commits Made",
-    value: '4200+',
+    id: "releases",
+    title: "Faster Releases, Fewer Bottlenecks",
+    value: '40%',
   },
   {
-    id: "coffee",
-    title: "cups of coffee behind the scenes",
-    value: '2000+',
+    id: "coverage",
+    title: "Test Coverage, Fewer Surprises",
+    value: '90%+',
   },
 ];
 
