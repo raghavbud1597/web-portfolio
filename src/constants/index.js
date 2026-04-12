@@ -35,52 +35,52 @@ export const navBar = {
 }
 
 export const quality = {
-  heading: "What I am Good at",
+  heading: "What I Do Best",
   skills: [
     {
       "id": 1,
-      "title": "Creating Responsive Webpages",
-      "description": "Expert in crafting web designs that look great and perform well on all devices, ensuring a seamless user experience across various screen sizes."
+      "title": "Frontend Architecture",
+      "description": "Designing scalable, maintainable frontend systems with strong foundations in React, Next.js, TypeScript, and modern engineering patterns."
     },
     {
       "id": 2,
-      "title": "Designing Frontend Architecture",
-      "description": "Skilled in planning and structuring the frontend for robust, scalable, and maintainable web applications, adhering to best practices and modern methodologies."
+      "title": "Performance Engineering",
+      "description": "Improving load times, runtime efficiency, and overall user experience through thoughtful optimization, code-splitting, and clean rendering strategies."
     },
     {
       "id": 3,
-      "title": "Coding Pixel Perfect Designs",
-      "description": "Proficient in translating high-fidelity designs into precise, visually accurate web pages that stay true to the designer’s vision."
+      "title": "Pixel-Perfect Execution",
+      "description": "Translating product and design direction into polished interfaces with precision, consistency, and strong attention to detail."
     },
     {
       "id": 4,
-      "title": "Coding Clean and Reusable Components",
-      "description": "Adept at developing modular, maintainable, and reusable UI components using modern JavaScript frameworks and libraries."
+      "title": "AI-Enhanced Delivery",
+      "description": "Using AI workflows to speed up development, improve code quality, support testing, and reduce regression risk without compromising standards."
     },
     {
       "id": 5,
-      "title": "Cross-Browser Compatibility",
-      "description": "Experienced in ensuring websites function consistently and correctly across different browsers, enhancing the reach and usability of web applications."
+      "title": "Reusable Systems",
+      "description": "Building modular, reusable patterns and shared UI systems that improve consistency, scale delivery, and reduce duplication across products."
     },
     {
       "id": 6,
-      "title": "Performance Optimization",
-      "description": "Focused on optimizing web performance for faster load times and smoother interactions, improving overall user satisfaction and engagement."
+      "title": "API-Driven Development",
+      "description": "Designing robust frontend flows that integrate cleanly with backend services, complex data models, and evolving product requirements."
     },
     {
       "id": 7,
-      "title": "User-Friendly Interfaces",
-      "description": "Committed to designing intuitive and accessible user interfaces that enhance user experience and ease of navigation."
+      "title": "Accessibility & Quality",
+      "description": "Shipping interfaces that are accessible, reliable, and cross-browser compatible, with quality standards that hold up in production."
     },
     {
       "id": 8,
-      "title": "Interactive UI Elements",
-      "description": "Skilled in creating dynamic and engaging interactive elements using modern JavaScript frameworks and libraries to enhance user engagement."
+      "title": "Developer Experience",
+      "description": "Improving team velocity through better workflows, clean code practices, CI/CD thinking, and a strong focus on maintainability."
     },
     {
       "id": 9,
-      "title": "Collaborative Teamwork",
-      "description": "Strong team player with experience in collaborative development environments, utilizing version control and best practices to ensure seamless integration and project success."
+      "title": "Product Collaboration",
+      "description": "Working closely with design, product, and engineering teams to turn ambiguous ideas into practical, scalable, high-impact solutions."
     }
   ]  
 };
