@@ -24,13 +24,11 @@ const Hero = () => {
             Web Developer & Designer
         </h1> */}
         <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutUp" initiallyVisible={true}>
-          <p className="text-left my-3 max-w-[500px] text-slate-400">
-            I am a passionate{" "}
-            <span className="text-gradient font-bold">frontend developer</span>{" "}
-            dedicated to transforming creative visions into pixel-perfect
-            realities. With a knack for designing robust frontend architectures,
-            I take pride in crafting seamless, responsive, and visually stunning
-            user experiences.
+          <p className="text-left my-3 max-w-[560px] text-slate-400">
+            I build <span className="text-gradient font-bold">scalable</span>,{" "}
+            <span className="text-gradient font-bold">pixel-perfect</span>{" "}
+            frontend experiences and <span className="text-gradient font-bold">AI-powered</span>{" "}
+            workflows that turn complex ideas into fast, polished products.
           </p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutUp" initiallyVisible={true}>
