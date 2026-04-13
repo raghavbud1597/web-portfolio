@@ -79,7 +79,7 @@ const WhyMe = () => {
       className={`flex flex-col lg:flex-row lg:items-start `}
     >
       <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutUp">
-        <h2 className={`${cardStyle.heading}`}>Why Hire Me</h2>
+        <h2 className={`${cardStyle.heading}`}>What Sets Me Apart</h2>
       </ScrollAnimation>
 
       <div className={`${cardStyle.cardContainer}`}>

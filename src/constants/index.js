@@ -313,32 +313,32 @@ export const experience = [
 export const whyMe = [
   {
     "id": "01",
-    "heading": "Seamless Integration",
-    "description": "I engineer solutions that integrate smoothly into your workflows, ensuring compatibility and scalability for rapid progress."
+    "heading": "Engineering Ownership",
+    "description": "I take ownership from architecture to delivery, balancing product goals, code quality, and long-term maintainability."
   },
   {
     "id": "02",
-    "heading": "Strategic Vision",
-    "description": "I bring a strategic mindset to projects, aligning development efforts with your objectives to deliver impactful results."
+    "heading": "Scalable Frontend Systems",
+    "description": "I design frontend systems that stay clean as products grow, with reusable patterns, strong foundations, and maintainable architecture."
   },
   {
     "id": "03",
-    "heading": "Proven Track Record",
-    "description": "My successful projects demonstrate my ability to exceed expectations and add value to your team."
+    "heading": "Performance That Ships",
+    "description": "I build fast, resilient experiences with a strong focus on load time, runtime performance, accessibility, and production quality."
   },
   {
     "id": "04",
-    "heading": "ROI-Focused Approach",
-    "description": "I prioritize delivering tangible returns on your investment by focusing on outcomes that directly impact your bottom line."
+    "heading": "AI-Enhanced Execution",
+    "description": "I use AI to accelerate development, improve testing and code review, and ship faster without lowering engineering standards."
   },
   {
     "id": "05",
-    "heading": "Customized Solutions",
-    "description": "I tailor solutions to fit your specific needs, ensuring seamless integration with your processes and addressing your challenges."
+    "heading": "Product-Minded Delivery",
+    "description": "I turn ambiguous requirements into polished, practical solutions that move quickly while staying aligned with user and business needs."
   },
   {
     "id": "06",
-    "heading": "Collaborative Partnership",
-    "description": "I'm committed to forming a collaborative partnership aimed at achieving shared goals, offering expertise to elevate your frontend development efforts."
+    "heading": "Cross-Functional Collaboration",
+    "description": "I work closely with design, product, and backend teams to turn complex ideas into reliable, high-impact features."
   }
 ]
