@@ -18,3 +18,29 @@
 body {
     background-color: #f8fafc;
 }
+
+@keyframes skills-marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.skills-marquee-track {
+  width: max-content;
+  animation: skills-marquee 22s linear infinite;
+  will-change: transform;
+}
+
+.skills-marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skills-marquee-track {
+    animation: none;
+  }
+}

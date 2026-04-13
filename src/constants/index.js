@@ -1,14 +1,24 @@
 import {
+  nextjs,
+  typescript,
+  react,
+  vite,
+  tailwind,
+  nodejs,
+  githubActions,
+  docker,
+  python,
+  aws,
+  azure,
+  postman,
+  materialUI,
+  js,
   bootstrap,
   css,
   html,
-  js,
-  react,
   sass,
-  nodejs,
   figma,
   git,
-  tailwind,
   code,
 } from "../assets";
 
@@ -133,6 +143,76 @@ export const stats = [
 
 export const skills = [
   {
+    id: "nextjs",
+    title: "Next.js",
+    icon: nextjs,
+  },
+  {
+    id: "typescript",
+    title: "TypeScript",
+    icon: typescript,
+  },
+  {
+    id: "react",
+    title: "React",
+    icon: react,
+  },
+  {
+    id: "vite",
+    title: "Vite",
+    icon: vite,
+  },
+  {
+    id: "tailwind",
+    title: "Tailwind CSS",
+    icon: tailwind,
+  },
+  {
+    id: "nodejs",
+    title: "Node.js",
+    icon: nodejs,
+  },
+  {
+    id: "github-actions",
+    title: "GitHub Actions",
+    icon: githubActions,
+  },
+  {
+    id: "docker",
+    title: "Docker",
+    icon: docker,
+  },
+  {
+    id: "python",
+    title: "Python",
+    icon: python,
+  },
+  {
+    id: "aws",
+    title: "AWS",
+    icon: aws,
+  },
+  {
+    id: "azure",
+    title: "Azure",
+    icon: azure,
+  },
+  {
+    id: "postman",
+    title: "Postman",
+    icon: postman,
+  },
+  {
+    id: "material-ui",
+    title: "Material UI",
+    icon: materialUI,
+  },
+  {
+    id: "javascript",
+    title: "JavaScript",
+    icon: js,
+  },
+  {
     id: "html",
     title: "HTML",
     icon: html,
@@ -143,24 +223,9 @@ export const skills = [
     icon: css,
   },
   {
-    id: "javascript",
-    title: "JavaScript",
-    icon: js,
-  },
-  {
-    id: "react",
-    title: "React",
-    icon: react,
-  },
-  {
-    id: "node",
-    title: "Node",
-    icon: nodejs,
-  },
-  {
-    id: "github",
-    title: "Github",
-    icon: git,
+    id: "sass",
+    title: "Sass",
+    icon: sass,
   },
   {
     id: "bootstrap",
@@ -173,16 +238,10 @@ export const skills = [
     icon: figma,
   },
   {
-    id: "sass",
-    title: "Sass",
-    icon: sass,
+    id: "github",
+    title: "Github",
+    icon: git,
   },
-  { 
-    id: "tailwind",
-    title: "Tailwind CSS",
-    icon: tailwind,
-  },
-  
 ];
 
 export const experience = [
