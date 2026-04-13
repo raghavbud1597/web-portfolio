@@ -40,7 +40,7 @@ const WhyMe = () => {
         transition-all
         hover:-translate-y-8
         hover:shadow-neu-hover
-        hover:bg-gradient-to-br hover:from-[#d39ced] hover:to-[#6a53d7]
+        hover:bg-gradient-to-br hover:from-stone-700 hover:via-slate-700 hover:to-amber-600
         group
     `,
     content: `p-5 text-center`,
@@ -53,8 +53,7 @@ const WhyMe = () => {
         transition-all 
         font-bold
         z-10
-        group-hover:text-slate-400  
-        group-hover:opacity-50 
+        group-hover:text-stone-100/20
     `,
     cardTitle: `
         text-2xl
@@ -62,14 +61,14 @@ const WhyMe = () => {
         text-slate-500
         z-20
         transition-all
-        group-hover:text-slate-200
+        group-hover:text-white
     `,
     cardText: `
         text-lg
         text-slate-500
         z-20
         transition-all
-        group-hover:text-slate-300
+        group-hover:text-slate-200
 
     `,
   };
