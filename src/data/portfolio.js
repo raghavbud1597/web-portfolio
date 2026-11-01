@@ -9,8 +9,7 @@ export const profile = {
   name: "Raghav Budhiraja",
   email: "raghavbudhiraja78@gmail.com",
   emailHref: "mailto:raghavbudhiraja78@gmail.com",
-  resume:
-    "https://drive.google.com/file/d/17RHXjbgz1oZOiLEo8To4Jk8l_dqQUl_T/view",
+  resume: `${import.meta.env.BASE_URL}raghav-budhiraja-resume.pdf`,
   github: "https://github.com/raghavbud1597",
   codepen: "https://codepen.io/raghavbudhiraja",
   linkedin: "https://www.linkedin.com/in/raghav-budhiraja/",

@@ -31,6 +31,7 @@ The Vite base is `/web-portfolio/` for GitHub Pages. `npm run deploy` builds and
 - `src/index.css`: theme, layout, responsive styles, and motion
 - `src/assets/avatar.webp`: optimized front-facing hoodie avatar
 - `src/assets/projects`: local screenshots of the pinned GitHub projects
+- `public/raghav-budhiraja-resume.pdf`: downloadable resume served with the portfolio
 
 The avatar uses the front-facing hoodie illustration with gentle idle animation and no cursor tracking. Animation uses native CSS and browser observers. The Motion control persists for the browser session. System reduced-motion preferences take priority.
 
