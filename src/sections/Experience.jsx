@@ -1,31 +1,42 @@
-import styles from "../styles";
-import { experience } from "../constants";
-import ScrollAnimation from "react-animate-on-scroll";
+import Reveal from "../components/Reveal";
+import SectionHeading from "../components/SectionHeading";
+import ExperienceItem from "../components/ExperienceItem";
+import { experience, education, profile } from "../data/portfolio";
 
-const Experience = () => {
+export default function Experience() {
   return (
-    <section id="experience">
-      <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutUp">
-        <h2 className={`${styles.heading2}`}>Education & Experience</h2>
-      </ScrollAnimation>
-      <div className="w-full">
-        {experience.map((item) => (
-          <ScrollAnimation key={item.id} animateIn="fadeInUp" animateOut="fadeOutUp">
-            <div
-              key={item.id}
-              className="flex items-center justify-start  p-4 border-b-2 border-slate-300"
-            >
-              <p className="text-left w-[250px]">{item.year}</p>
-              <div className="w-full flex flex-col lg:flex-row items-start justify-start lg:justify-between lg:items-center">
-                <h3 className="text-lg text-left">{item.title}</h3>
-                <p className="text-sm">{item.company}</p>
-              </div>
-            </div>
-          </ScrollAnimation>
+    <section className="section wrap experience" id="experience">
+      <SectionHeading
+        label="03 / THE JOURNEY"
+        title={
+          <>
+            Experience
+            <br />
+            that <em>adds up.</em>
+          </>
+        }
+        description={
+          <>
+            Different teams. Complex problems.
+            <br />A consistent focus on thoughtful delivery.
+          </>
+        }
+        link={{ href: profile.linkedin, label: "LinkedIn" }}
+      />
+      <div className="timeline">
+        {experience.map((job, index) => (
+          <ExperienceItem key={job.id} job={job} defaultOpen={index === 0} />
         ))}
       </div>
+      <Reveal className="education">
+        <span className="eyebrow">ALWAYS LEARNING</span>
+        {education.map((item) => (
+          <p key={item.title}>
+            {item.title}
+            <span>{item.institution}</span>
+          </p>
+        ))}
+      </Reveal>
     </section>
   );
-};
-
-export default Experience;
+}

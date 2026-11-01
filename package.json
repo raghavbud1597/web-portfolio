@@ -7,32 +7,29 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d dist",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview --port 8080"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "lint": "eslint . --max-warnings 0",
+    "preview": "vite preview --port 8080",
+    "format": "prettier --write src index.html vite.config.js eslint.config.js package.json README.md",
+    "format:check": "prettier --check src index.html vite.config.js eslint.config.js package.json README.md"
   },
   "dependencies": {
-    "animate.css": "^4.1.1",
-    "flowbite": "^2.3.0",
-    "flowbite-react": "^0.9.0",
-    "react": "^18.2.0",
-    "react-animate-on-scroll": "^2.1.9",
-    "react-dom": "^18.2.0",
-    "react-parallax-tilt": "^1.7.227"
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "engines": {
+    "node": "^20.19.0 || >=22.13.0"
   },
   "devDependencies": {
-    "@types/react": "^18.2.66",
-    "@types/react-dom": "^18.2.22",
-    "@vitejs/plugin-react": "^4.2.1",
-    "autoprefixer": "^10.4.19",
-    "eslint": "^8.57.0",
-    "eslint-plugin-react": "^7.34.1",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.6",
-    "gh-pages": "^6.1.1",
-    "postcss": "^8.4.38",
-    "tailwindcss": "^3.4.3",
-    "vite": "^5.2.0"
+    "@eslint/js": "^10.0.1",
+    "@vitejs/plugin-react": "^6.1.2",
+    "eslint": "^10.13.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.7",
+    "gh-pages": "^6.3.0",
+    "globals": "^17.13.0",
+    "prettier": "^3.9.10",
+    "vite": "^8.3.4"
   }
 }
