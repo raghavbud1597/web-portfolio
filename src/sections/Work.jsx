@@ -16,8 +16,8 @@ export default function Work() {
         }
         description={
           <>
-            A few things I’ve built, from data-rich interfaces
-            <br className="desktop" /> to playful everyday tools.
+            Pinned projects from my GitHub, from design tools
+            <br className="desktop" /> to interactive applications and games.
           </>
         }
         link={{ href: profile.github, label: "All projects" }}

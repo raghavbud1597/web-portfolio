@@ -1,3 +1,10 @@
+import neumorphismImage from "../assets/projects/neumorphism-generator.jpg";
+import youtubeImage from "../assets/projects/youtube-clone.jpg";
+import portfolioImage from "../assets/projects/web-portfolio.jpg";
+import wordleImage from "../assets/projects/wordle.jpg";
+import bankImage from "../assets/projects/hoobank.jpg";
+import ticTacToeImage from "../assets/projects/tic-tac-toe.jpg";
+
 export const profile = {
   name: "Raghav Budhiraja",
   email: "raghavbudhiraja78@gmail.com",
@@ -11,32 +18,87 @@ export const profile = {
 
 export const projects = [
   {
-    id: "dashboard",
+    id: "neumorphism-generator",
     number: "01",
-    category: "FRONTEND APPLICATION",
-    title: "React Admin Dashboard",
-    description: "Data, structure, and a more considered workspace.",
-    url: `${profile.github}/react-admin-dashboard`,
-    tags: ["React", "Material UI"],
-    wide: true,
+    category: "DESIGN TOOL",
+    title: "Neumorphism Generator",
+    description:
+      "Shape light and shadow, generate CSS, and explore a library of interactive components.",
+    repositoryUrl: `${profile.github}/neumorphism-generator`,
+    liveUrl: "https://raghavbud1597.github.io/neumorphism-generator/",
+    image: neumorphismImage,
+    imageAlt:
+      "Neumorphism Generator with a live surface preview, styling controls, and generated CSS",
+    tags: ["React", "CSS", "Vite"],
+  },
+  {
+    id: "youtube-clone",
+    number: "02",
+    category: "VIDEO APPLICATION",
+    title: "YouTube Clone",
+    description:
+      "Browse videos, search for a topic, and keep a personal library with typed API services and Redux.",
+    repositoryUrl: `${profile.github}/youtube-clone`,
+    image: youtubeImage,
+    imageAlt:
+      "YouTube Clone home feed with video thumbnails, search, and sidebar navigation",
+    tags: ["React", "TypeScript", "Redux"],
+  },
+  {
+    id: "web-portfolio",
+    number: "03",
+    category: "PERSONAL WEBSITE",
+    title: "Personal Portfolio",
+    description:
+      "A home for my work, with responsive layouts, thoughtful motion, and an animated avatar.",
+    repositoryUrl: `${profile.github}/web-portfolio`,
+    liveUrl: "https://raghavbud1597.github.io/web-portfolio/",
+    image: portfolioImage,
+    imageAlt:
+      "Raghav Budhiraja’s portfolio with a lime-accented headline and professional avatar",
+    tags: ["React", "CSS", "Vite"],
   },
   {
     id: "wordle",
-    number: "02",
+    number: "04",
     category: "INTERACTIVE PLAY",
     title: "Wordle",
-    description: "A playful word-guessing experience.",
-    url: `${profile.github}/wordle`,
-    tags: [],
+    description:
+      "Six chances, five letters. A word-guessing game with an on-screen keyboard, themes, and game statistics.",
+    repositoryUrl: `${profile.github}/wordle`,
+    liveUrl: "https://wordle-eight-rosy.vercel.app/",
+    image: wordleImage,
+    imageAlt:
+      "Wordle game with a five-letter guess, six-row board, and keyboard",
+    tags: ["Next.js", "TypeScript", "Tailwind"],
   },
   {
-    id: "grid",
-    number: "03",
-    category: "DEVELOPER TOOL",
-    title: "CSS Grid Generator",
-    description: "Exploring the building blocks of layout.",
-    url: `${profile.github}/css-grid-generator`,
-    tags: [],
+    id: "bank-modern-app",
+    number: "05",
+    category: "LANDING PAGE",
+    title: "HooBank",
+    description:
+      "A modern banking landing page with a dark interface, responsive sections, and bold visual details.",
+    repositoryUrl: `${profile.github}/bank_modern_app`,
+    liveUrl: "https://raghavbud1597.github.io/bank_modern_app/",
+    image: bankImage,
+    imageAlt:
+      "HooBank landing page with a next-generation payments headline and floating bank cards",
+    tags: ["React", "Tailwind", "Vite"],
+  },
+  {
+    id: "tic-tac-toe",
+    number: "06",
+    category: "INTERACTIVE PLAY",
+    title: "Tic Tac Toe",
+    description:
+      "A two-player classic with custom React hooks, turn tracking, and a running score.",
+    repositoryUrl: `${profile.github}/tic-tac-toe`,
+    liveUrl: "https://raghavbud1597.github.io/tic-tac-toe/",
+    image: ticTacToeImage,
+    imageAlt:
+      "Tic Tac Toe board with X and O moves, a reset button, and game scores",
+    tags: ["React", "Custom Hooks", "CSS"],
   },
 ];
 
