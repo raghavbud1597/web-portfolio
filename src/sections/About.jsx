@@ -12,16 +12,16 @@ export default function About() {
             02 / HOW I THINK
           </Reveal>
           <ScrollRevealText>
-            The best frontend work lives where thoughtful design meets
-            dependable engineering.
+            The best software lives where thoughtful design meets dependable
+            engineering.
           </ScrollRevealText>
         </div>
         <Reveal className="about-details">
           <p>
             I’m Raghav, a senior software developer who cares as much about how
-            a product feels as how it’s built. I connect frontend architecture,
-            performance, and product thinking to turn ambitious ideas into
-            useful experiences.
+            a product feels as how it’s built. I connect application
+            architecture, performance, and product thinking to turn ambitious
+            ideas into useful experiences.
           </p>
           <p>
             My approach is simple: understand the problem, build a strong

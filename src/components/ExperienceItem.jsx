@@ -14,9 +14,11 @@ export default function ExperienceItem({ job, defaultOpen = false }) {
         </span>
       </summary>
       <div className="job-description">
-        {job.description.map((line) => (
-          <div key={line}>{line}</div>
-        ))}
+        <ul className="job-achievements">
+          {job.description.map((line) => (
+            <li key={line}>{line}</li>
+          ))}
+        </ul>
         {job.skills && <span>{job.skills}</span>}
       </div>
     </Reveal>

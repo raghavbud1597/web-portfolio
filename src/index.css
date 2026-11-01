@@ -150,7 +150,7 @@ nav a.active:after {
 .eyebrow,
 .edition,
 .hero-footer,
-.portrait-label,
+.avatar-label,
 .job-date,
 .contact-top > span {
   font-size: 10px;
@@ -250,29 +250,44 @@ h1 {
   color: #111;
   transform: translateY(4px);
 }
-.portrait-frame {
+.avatar-frame {
   height: 407px;
   position: relative;
   overflow: hidden;
   border-radius: 3px;
-  background: #282b22;
-  transform: rotate(2deg);
+  isolation: isolate;
+  background:
+    radial-gradient(ellipse at 50% 48%, #d0f88b1c, transparent 68%), #1a1e17;
+  border: 1px solid #454e38;
 }
-.portrait-frame img {
+.avatar-frame:before {
+  content: "";
+  position: absolute;
+  width: 76%;
+  aspect-ratio: 1;
+  border: 1px solid #d0f88b30;
+  border-radius: 50%;
+  top: 12%;
+  left: 12%;
+  background: radial-gradient(ellipse, #d0f88b08, transparent 70%);
+  z-index: -1;
+}
+.avatar-stage {
+  position: absolute;
+  inset: 25px 0 -16px;
+  z-index: 1;
+}
+.avatar-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: 50% 44%;
-  filter: grayscale(1) brightness(0.78);
-  transition:
-    filter 0.7s,
-    transform 1s;
+  object-fit: contain;
+  object-position: center bottom;
+  filter: drop-shadow(0 12px 16px #0004);
+  animation: avatar-idle 6s ease-in-out infinite;
+  transform-origin: 50% 80%;
+  will-change: transform;
 }
-.portrait-frame:hover img {
-  filter: grayscale(0.2) brightness(0.85);
-  transform: scale(1.035);
-}
-.portrait-label {
+.avatar-label {
   position: absolute;
   top: 18px;
   left: 20px;
@@ -280,15 +295,18 @@ h1 {
   display: flex;
   justify-content: space-between;
   z-index: 3;
-  font-size: 8px;
+  color: #c2cbb5;
+  font-size: 7px;
   letter-spacing: 1px;
 }
-.portrait-shade {
+.avatar-shade {
   position: absolute;
   inset: 0;
-  background: linear-gradient(0deg, #111a 0%, transparent 55%, #1115);
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(0deg, #111310df, transparent 26%);
 }
-.orbit {
+.avatar-orbit {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -296,25 +314,46 @@ h1 {
   stroke: var(--lime);
   stroke-width: 1;
   fill: none;
-  opacity: 0.7;
+  opacity: 0.24;
   pointer-events: none;
-  transform: scale(1.15);
+  z-index: 0;
+  transform: scale(0.92);
+  animation: avatar-orbit 28s linear infinite;
 }
-.portrait-caption {
+.avatar-caption {
   position: absolute;
-  bottom: 24px;
-  left: 24px;
-  right: 24px;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-family: var(--display);
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.2;
+  z-index: 3;
+  pointer-events: none;
 }
-.asterisk {
-  font-size: 63px;
+.avatar-accent {
+  font-size: 48px;
   color: var(--lime);
+}
+@keyframes avatar-idle {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-0.6deg);
+  }
+  50% {
+    transform: translateY(-9px) rotate(0.6deg);
+  }
+}
+@keyframes avatar-orbit {
+  from {
+    transform: scale(0.92) rotate(0deg);
+  }
+  to {
+    transform: scale(0.92) rotate(360deg);
+  }
 }
 .hero-footer {
   display: flex;
@@ -664,14 +703,29 @@ details[open] .job-plus {
   line-height: 1.9;
   color: #bec4b4;
 }
+.job-achievements {
+  margin: 0;
+  padding-left: 16px;
+}
+.job-achievements li {
+  padding-left: 3px;
+}
+.job-achievements li + li {
+  margin-top: 10px;
+}
+.job-achievements li::marker {
+  color: var(--lime);
+}
 .job-description span {
+  display: block;
+  margin-top: 16px;
   color: #88947b;
   font-size: 10px;
 }
 .education {
   margin: 45px 0 0 34%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
 }
 .education > .eyebrow {
@@ -816,7 +870,7 @@ footer button {
   .hero-grid {
     gap: 70px;
   }
-  .portrait-frame {
+  .avatar-frame {
     height: 490px;
   }
 }
@@ -834,7 +888,7 @@ footer button {
   h1 {
     font-size: 7.3vw;
   }
-  .portrait-frame {
+  .avatar-frame {
     height: 340px;
   }
   .edition {
@@ -932,23 +986,14 @@ footer button {
     max-width: 270px;
     font-size: 13px;
   }
-  .portrait-frame {
-    height: 350px;
-    transform: rotate(0);
-    max-width: none;
+  .avatar-frame {
+    height: 370px;
   }
-  .portrait-frame img {
-    object-position: 50% 44%;
+  .avatar-stage {
+    inset: 20px 0 -18px;
   }
-  .portrait-label {
-    font-size: 8px;
-  }
-  .orbit {
-    transform: scale(1.2);
-    opacity: 0.5;
-  }
-  .portrait-caption {
-    font-size: 20px;
+  .avatar-caption {
+    font-size: 18px;
   }
   .hero-footer {
     gap: 10px;
@@ -1103,11 +1148,12 @@ footer button {
     font-size: 11px;
   }
   .job-description {
-    margin-left: 95px;
-    margin-right: 5px;
-    font-size: 11px;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 12px;
   }
   .education {
+    grid-template-columns: 1fr;
     gap: 15px;
   }
   .education p {
@@ -1185,118 +1231,5 @@ footer button {
   }
   .motion-ready .word-reveal span {
     color: var(--text);
-  }
-}
-
-.avatar-frame {
-  isolation: isolate;
-  transform: none;
-  background:
-    radial-gradient(ellipse at 50% 48%, #d0f88b1c, transparent 68%), #1a1e17;
-  border: 1px solid #454e38;
-  overflow: hidden;
-}
-.avatar-frame:before {
-  content: "";
-  position: absolute;
-  width: 76%;
-  aspect-ratio: 1;
-  border: 1px solid #d0f88b30;
-  border-radius: 50%;
-  top: 12%;
-  left: 12%;
-  background: radial-gradient(ellipse, #d0f88b08, transparent 70%);
-  z-index: -1;
-}
-.avatar-stage {
-  position: absolute;
-  inset: 25px 0 -16px;
-  transform: perspective(800px) rotateX(var(--avatar-x, 0deg))
-    rotateY(var(--avatar-y, 0deg));
-  transition: transform 0.35s ease-out;
-  z-index: 1;
-}
-.avatar-frame .professional-avatar {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center bottom;
-  filter: drop-shadow(0 12px 16px #0004);
-  animation: avatar-idle 6s ease-in-out infinite;
-  transform-origin: 50% 80%;
-  will-change: transform;
-}
-.avatar-frame:hover .professional-avatar {
-  filter: drop-shadow(0 14px 18px #0005);
-  transform: none;
-}
-.avatar-frame .portrait-label {
-  color: #c2cbb5;
-  font-size: 7px;
-  letter-spacing: 1px;
-}
-.avatar-frame .portrait-shade {
-  z-index: 2;
-  pointer-events: none;
-  background: linear-gradient(0deg, #111310df, transparent 26%);
-}
-.avatar-frame .portrait-caption {
-  z-index: 3;
-  pointer-events: none;
-  font-size: 20px;
-  bottom: 20px;
-  left: 20px;
-  right: 20px;
-}
-.avatar-frame .orbit {
-  z-index: 0;
-  opacity: 0.24;
-  transform: scale(0.92);
-  animation: avatar-orbit 28s linear infinite;
-}
-.avatar-frame .asterisk {
-  font-size: 48px;
-}
-@keyframes avatar-idle {
-  0%,
-  100% {
-    transform: translateY(0) rotate(-0.6deg);
-  }
-  50% {
-    transform: translateY(-9px) rotate(0.6deg);
-  }
-}
-@keyframes avatar-orbit {
-  from {
-    transform: scale(0.92) rotate(0deg);
-  }
-  to {
-    transform: scale(0.92) rotate(360deg);
-  }
-}
-.motion-off .avatar-stage {
-  transform: none !important;
-}
-@media (prefers-reduced-motion: reduce) {
-  .avatar-stage {
-    transform: none !important;
-  }
-  .avatar-frame .professional-avatar,
-  .avatar-frame .orbit {
-    animation: none !important;
-  }
-}
-@media (max-width: 650px) {
-  .avatar-frame {
-    height: 370px;
-  }
-  .avatar-stage {
-    inset: 20px 0 -18px;
-  }
-  .avatar-frame .portrait-label {
-    font-size: 7px;
-  }
-  .avatar-frame .portrait-caption {
-    font-size: 18px;
   }
 }
