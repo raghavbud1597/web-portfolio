@@ -1,55 +1,37 @@
-import "./App.css";
-import {
-  Navbar,
-  CTA,
-  Stats,
-  Footer,
-  Hero,
-  Experience,
-  Skills,
-  Qualities,
-  WhyMe,
-  Projects,
-} from "./sections";
-import { layout } from "./styles";
+import { MotionContext } from "./context/MotionContext";
+import { useMotionPreferences } from "./hooks/useMotionPreferences";
+import ScrollProgress from "./components/ScrollProgress";
+import Navbar from "./sections/Navbar";
+import Hero from "./sections/Hero";
+import ProofBar from "./sections/ProofBar";
+import Work from "./sections/Work";
+import About from "./sections/About";
+import Experience from "./sections/Experience";
+import Contact from "./sections/Contact";
+import Footer from "./sections/Footer";
 
-function App() {
+export default function App() {
+  const motion = useMotionPreferences();
   return (
-    <div className={`bg-slate-50 w-full my-4`}>
-      <div className={` ${layout.pageWrapper}`}>
-        <div className={`${layout.sectionWrapper}`}>
-          <Navbar />
-        </div>
-        <div className={`${layout.sectionWrapper} my-0 md:my-20 lg:my-30`}>
+    <MotionContext value={motion}>
+      <div
+        className={`portfolio motion-ready${motion.disabled ? " motion-off" : ""}`}
+      >
+        <a className="skip" href="#main">
+          Skip to content
+        </a>
+        <ScrollProgress />
+        <Navbar />
+        <main id="main">
           <Hero />
-        </div>
-        <div className={`${layout.sectionWrapper} `}>
-          <Stats />
-        </div>
-        <div className={`${layout.sectionWrapper} `}>
-          <Qualities />
-        </div>
-        <div className={`${layout.sectionWrapper}`}>
-          <Skills />
-        </div>
-        <div className={`${layout.sectionWrapper} my-0 md:mb-20`}>
+          <ProofBar />
+          <Work />
+          <About />
           <Experience />
-        </div>
-        <div className={`${layout.sectionWrapper} my-0 md:mb-20`}>
-          <Projects />
-        </div>
-        <div className={`${layout.sectionWrapper} my-0 md:my-20`}>
-          <WhyMe />
-        </div>
-        <div className={`${layout.sectionWrapper} my-2 md:my-10`}>
-          <CTA />
-        </div>
-        <div className={`${layout.sectionWrapper}`}>
-          <Footer />
-        </div>
+          <Contact />
+        </main>
+        <Footer />
       </div>
-    </div>
+    </MotionContext>
   );
 }
-
-export default App;

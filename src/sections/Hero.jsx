@@ -1,75 +1,52 @@
-import ScrollAnimation from "react-animate-on-scroll";
-import ProfilePicture from "./components/ProfilePicture";
-import styles, { layout } from "../styles";
-import Button from "./components/Button";
+import Avatar from "../components/Avatar";
 
-const Hero = () => {
+export default function Hero() {
   return (
-    <section className={`${layout.sectionReverse}`}>
-      <div className={`flex-1 ${styles.flexStart} flex-col text-slate-500`}>
-        <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutUp" initiallyVisible={true}>
-          <p className="text-[1.5rem] animate__animated animate__bounce">Hello there, my name is</p>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutUp" initiallyVisible={true}>
-          <h1 className="font-montserrat font-bold lg:text-[5rem] text-[3.5rem] lg:leading-[5rem] leading-[3.5rem] text-left tracking-tight text-slate-600">
-            Raghav
-          </h1>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutUp" initiallyVisible={true}>
-          <h1 className="font-montserrat font-bold lg:text-[5rem] text-[3.5rem] lg:leading-[5rem] leading-[3.5rem] tracking-tight text-left">
-            Budhiraja
-          </h1>
-        </ScrollAnimation>
-        {/* <h1 className="font-montserrat font-bold md:text-[2.5rem] text-[2rem] md:leading-[2.6rem] leading-[2rem] text-left tracking-tight text-gradient">
-            Web Developer & Designer
-        </h1> */}
-        <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutUp" initiallyVisible={true}>
-          <p className="text-left my-3 max-w-[560px] text-slate-400">
-            I build <span className="text-gradient font-bold">scalable</span>,{" "}
-            <span className="text-gradient font-bold">pixel-perfect</span>{" "}
-            frontend experiences and <span className="text-gradient font-bold">AI-powered</span>{" "}
-            workflows that turn complex ideas into fast, polished products.
-          </p>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutUp" initiallyVisible={true}>
-          <div className="flex gap-2 flex-col lg:flex-row my-4">
-            <Button
-              text="Contact Me"
-              link="mailto:raghavbudhiraja78@gmail.com"
-            />
-            <Button
-              text="Download CV"
-              link="https://drive.google.com/file/d/17RHXjbgz1oZOiLEo8To4Jk8l_dqQUl_T/view"
-            />
-          </div>
-        </ScrollAnimation>
+    <section className="hero wrap" id="home">
+      <div className="hero-top">
+        <p className="eyebrow">
+          <span className="live-dot"></span> RAGHAV BUDHIRAJA{" "}
+          <span className="slash">/</span> SENIOR SOFTWARE DEVELOPER
+        </p>
+        <span className="edition">PORTFOLIO — 2026</span>
       </div>
-      <div className={`flex-1 ${styles.flexCenter} md:my-0 my-10`}>
-      <ScrollAnimation animateIn="zoomIn" animateOut="zoomOut" initiallyVisible={true}>
-        <ProfilePicture />
-        </ScrollAnimation>
+      <div className="hero-grid">
+        <div className="hero-copy">
+          <h1>
+            <span className="line">
+              <span>Complex ideas.</span>
+            </span>
+            <span className="line">
+              <span>Effortless</span>
+            </span>
+            <span className="line lime">
+              <span>
+                experiences<span className="period">.</span>
+              </span>
+            </span>
+          </h1>
+          <div className="hero-bottom">
+            <p>
+              I turn complex problems into fast, thoughtful interfaces. Built to
+              feel right. Engineered to scale.
+            </p>
+            <a
+              className="circle-link"
+              href="#work"
+              aria-label="Explore selected work"
+            >
+              ↓
+            </a>
+          </div>
+        </div>
+        <Avatar />
+      </div>
+      <div className="hero-footer">
+        <span>REACT · TYPESCRIPT · NEXT.JS · AI WORKFLOWS</span>
+        <a href="#about">
+          A LITTLE FURTHER DOWN <span>↓</span>
+        </a>
       </div>
     </section>
   );
-};
-
-export default Hero;
-
-/* 
-<section className={`flex flex-col md:flex-row  ${styles.paddingY} ${styles.marginY}`}>
-      <div className="flex flex-col items-center md:items-start justify-center w-full md:mx-6">
-        <p>Hello there, my name is</p>
-        <h1 className="text-gradient text-[70px] leading-[80px]">Raghav</h1>
-        <h1 className="text-gradient text-[70px] leading-[80px]">Budhiraja</h1>
-      </div>
-      <div className="flex justify-center items-center w-full md:mx-10">
-      <ProfilePicture/>
-      </div>
-      <div className="flex flex-wrap w-full md:mx-10">
-        {tags.map((tag) => (
-          <Tags key={tag.id} title={tag.title} bgColor={tag.bgColor} />
-        ))}
-      </div>
-    </section>
-
-*/
+}

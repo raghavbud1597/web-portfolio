@@ -1,56 +1,42 @@
-import styles, { layout } from "../styles";
-import { socialMedia } from "../constants";
-import ScrollAnimation from "react-animate-on-scroll";
+import { useMotion } from "../hooks/useMotion";
+import { profile } from "../data/portfolio";
 
-const Footer = () => {
-  let date = new Date();
-  let year = date.getFullYear();
+export default function Footer() {
+  const { disabled, systemReduced, toggle } = useMotion();
   return (
-    <footer className={`${layout.sectionReverse} justify-between`}>
-      <ScrollAnimation
-           
-            animateIn="fadeInUp"
-            animateOut="fadeOutUp"
-            offset={10}
-          >
-      <p className="text-sm text-slate-400">&copy; {year} Raghav Budhiraja</p>
-      </ScrollAnimation>
-      <div className={`${styles.flexCenter}`}>
-        {socialMedia.map((item) => (
-          <a
-            key={item.id}
-            href={item.url}
-            target="_blank"
-            rel="noreferrer"
-            className="mr-4"
-          >
-            <ScrollAnimation
-           
-           animateIn="fadeInUp"
-           animateOut="fadeOutUp"
-           offset={10}
-         >
-            <span
-              className="
-              text-sm 
-              text-slate-400 
-              bg-clip-text
-              hover:font-bold
-              hover:text-transparent
-              hover:bg-gradient-to-r 
-              hover:from-[#962ec1] 
-              hover:to-[#e9877a]
-              transition-all
-              "
-            >
-              {item.title}
-            </span>
-            </ScrollAnimation>
-          </a>
-        ))}
+    <footer className="wrap">
+      <a className="brand" href="#home" aria-label="Back to home">
+        r<span>b</span>
+        <i>®</i>
+      </a>
+      <p>
+        © {new Date().getFullYear()} {profile.name}
+      </p>
+      <div>
+        <a href={profile.github} target="_blank" rel="noopener noreferrer">
+          GitHub ↗
+        </a>
+        <a href={profile.codepen} target="_blank" rel="noopener noreferrer">
+          CodePen ↗
+        </a>
+        <button
+          id="motion-toggle"
+          type="button"
+          aria-pressed={disabled}
+          aria-disabled={systemReduced}
+          title={
+            systemReduced
+              ? "Reduced motion follows your system preference"
+              : "Toggle animation"
+          }
+          onClick={toggle}
+        >
+          Motion: {disabled ? "off" : "on"}
+        </button>
       </div>
+      <a className="top-link" href="#home" aria-label="Back to top">
+        ↑
+      </a>
     </footer>
   );
-};
-
-export default Footer;
+}

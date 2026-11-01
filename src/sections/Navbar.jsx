@@ -1,24 +1,41 @@
+import { useActiveSection } from "../hooks/useActiveSection";
+import { profile } from "../data/portfolio";
 
-import { navBar } from "../constants";
-import Button from "./components/Button";
-const Navbar = () => {
+export default function Navbar() {
+  const activeSection = useActiveSection();
 
   return (
-    <nav className="flex items-center justify-between w-full">
-      <a href="#">
-        <img className="w-[30px] h-[30px]" src={navBar.logo} />
+    <header>
+      <a className="brand" href="#home" aria-label="Raghav Budhiraja home">
+        r<span>b</span>
+        <i>®</i>
       </a>
-
-      <ul className="lg:flex hidden items-center space-x-5">
-        {navBar.navLinks.map((link) => (
-          <li key={link} className="text-lg font-medium text-slate-400 px-5">
-            <a href={link.id}>{link.title}</a>
-          </li>
-        ))}
-      </ul>
-      <Button text="Hire Me" link="mailto:raghavbudhiraja78@gmail.com" type="muted"/>
-    </nav>
+      <nav aria-label="Main navigation">
+        <a
+          href="#work"
+          className={activeSection === "work" ? "active" : undefined}
+          aria-current={activeSection === "work" ? "location" : undefined}
+        >
+          Work
+        </a>
+        <a
+          href="#about"
+          className={activeSection === "about" ? "active" : undefined}
+          aria-current={activeSection === "about" ? "location" : undefined}
+        >
+          About
+        </a>
+        <a
+          href="#experience"
+          className={activeSection === "experience" ? "active" : undefined}
+          aria-current={activeSection === "experience" ? "location" : undefined}
+        >
+          Experience
+        </a>
+      </nav>
+      <a className="header-contact" href={profile.emailHref}>
+        Let’s talk <span>↗</span>
+      </a>
+    </header>
   );
-};
-
-export default Navbar;
+}
