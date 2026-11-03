@@ -1,6 +1,6 @@
 import neumorphismImage from "../assets/projects/neumorphism-generator.jpg";
 import youtubeImage from "../assets/projects/youtube-clone.jpg";
-import portfolioImage from "../assets/projects/web-portfolio.jpg";
+import dashboardImage from "../assets/projects/react-admin-dashboard.png";
 import wordleImage from "../assets/projects/wordle.jpg";
 import bankImage from "../assets/projects/hoobank.jpg";
 import ticTacToeImage from "../assets/projects/tic-tac-toe.jpg";
@@ -44,18 +44,18 @@ export const projects = [
     tags: ["React", "TypeScript", "Redux"],
   },
   {
-    id: "web-portfolio",
+    id: "react-admin-dashboard",
     number: "03",
-    category: "PERSONAL WEBSITE",
-    title: "Personal Portfolio",
+    category: "CONTENT WORKSPACE",
+    title: "React Admin Dashboard",
     description:
-      "A home for my work, with responsive layouts, thoughtful motion, and an animated avatar.",
-    repositoryUrl: `${profile.github}/web-portfolio`,
-    liveUrl: "https://raghavbud1597.github.io/web-portfolio/",
-    image: portfolioImage,
+      "RaghavPress brings post editing, content analytics, and category management into a responsive workspace.",
+    repositoryUrl: `${profile.github}/react-admin-dashboard`,
+    liveUrl: "https://raghavbud1597.github.io/react-admin-dashboard/",
+    image: dashboardImage,
     imageAlt:
-      "Raghav Budhiraja’s portfolio with a lime-accented headline and illustrated hoodie avatar",
-    tags: ["React", "CSS", "Vite"],
+      "RaghavPress admin dashboard with content statistics, an audience analytics chart, and a publishing overview",
+    tags: ["React", "Material UI", "Recharts"],
   },
   {
     id: "wordle",

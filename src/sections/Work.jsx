@@ -16,7 +16,7 @@ export default function Work() {
         }
         description={
           <>
-            Pinned projects from my GitHub, from design tools
+            Selected projects from my GitHub, from design tools
             <br className="desktop" /> to interactive applications and games.
           </>
         }
